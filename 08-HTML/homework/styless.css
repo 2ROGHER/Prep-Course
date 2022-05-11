@@ -1,0 +1,19 @@
+h1{
+    color:peachpuff;
+}
+img{
+    width: 800px;
+}
+#thirDiv{
+    background-color:green;
+    height: 500px;
+    width: 600px;
+    margin: 5px;
+}
+#spanId{
+    font-size: 18px;
+    margin: 50px;
+    padding: 50px;
+    border: 5px dashed purple;
+    border-radius: 20%;
+}
