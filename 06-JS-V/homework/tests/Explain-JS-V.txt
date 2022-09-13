@@ -1,0 +1,3 @@
+?* Que es `prototype`?
+
+* _Constructors_ (de Clases)

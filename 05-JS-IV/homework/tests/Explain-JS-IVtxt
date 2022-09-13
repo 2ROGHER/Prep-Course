@@ -1,0 +1,19 @@
+    ?* Que son los Objetos?
+        Los objetos en  JavaScript son representaciones (modelos)
+        de los objetos  reales que existen en nuestro entorno. Como tal, mediante el concepto de Objetos se pueden extraer los 
+        diferentes metodos(comportamientos) y propiedades(caracteristicas) que que forman parte de un objeto real. 
+	?* Que son las  Propiedades?
+        Las propiedades son caracteristicas, cualidades que distinguen y que diferencian a los objetos de otros.
+        Por ejemplo, el objeto  Carrito tiene las siguientes caracteristicas: color, cantidad de ruedas, cantidad de asientos,modelo, matricula, kilometraje, ect. Los cuales,
+        son caracteristicas propias de cada objeto.
+
+	?* Que son los  Métodos?
+        Los metodos son acciones, comportamientos, o funciones que puede realizar el objeto como tal. Del  ejemplo anterior, el objeto carrito puede tener algunos metodos como: acelerar, frenar, girar, tocar la vocina, etc.
+
+	?* Que es el  Bucle `for…in`?
+        Ahora que ya conocemos el Objeto, sus propiedades y metodos. A menudo, es neceseario 
+        iterar sobre dichas propias y las valores de estos, asi como tambien iterar sobre su metodos. Es decir, 
+        a veces conviene mostrar los valores de las propiedades de manera repetida sin. Por lo cual, es importante el uso de un bucle 
+        como el 'for..in' para tal proposito.
+
+	* Notación de puntos vs notación de corchetes

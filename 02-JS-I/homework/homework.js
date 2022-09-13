@@ -52,7 +52,7 @@ function resta(x, y) {
   return x-y;
 }
 
-function multiplica(x, y) {
+function multiplicacion(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
   return x*y;
@@ -144,7 +144,7 @@ function elevarAlCuadrado(num) {
   // ojo: No es raiz cuadrada!
   // Tu código:
   return  Math.pow(num,2);
-  //or return num*num;
+  //or [return num*num]
   
 }
 
@@ -152,13 +152,14 @@ function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
   return Math.pow(num,3);
-  //or [return num*num*num;]
+  //or [return num*num*num];
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
   return Math.pow(num,exponent);
+  //or [return ]
 }
 
 function redondearNumero(num) {
@@ -198,7 +199,7 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  return str+"!";
+  return str+" !";
 }
 
 function combinarNombres(nombre, apellido) {
@@ -251,12 +252,13 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if(letra.length ==1 && letra== ""){
-    return "Es vocal";
+  
+  if(letra == 'a' || letra == 'e' ||  letra == 'i' ||  letra == 'o' || letra == 'u'){
+    return "Es una vocal";
   }else if(letra.length>1){
     return "Dato incorrecto";
   }else{
-    return "Dato incorreto";
+    return "Dato incorrecto";
   }
 }
 

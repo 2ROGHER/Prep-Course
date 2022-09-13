@@ -1,0 +1,6 @@
+* Arrays
+
+    Los arrays en JavaScript son contenededores de 
+    de un conjunto de elementos organizados en celdas(casillas) donde  a cada 
+    elemento se le asigna una ubicion especifica llamado 'indice'.
+    Los arrays pueden contener elementos de diferentes tipos de datos, por lo cual, tambien son conisderados como un tipo de datos en JS.

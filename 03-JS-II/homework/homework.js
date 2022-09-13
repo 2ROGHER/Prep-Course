@@ -11,7 +11,7 @@ function obtenerMayor(x, y) {
     return x;
   }else if(x==y){
     return x;
-  }else{
+  }else {
     return y;
   }
 }
@@ -146,7 +146,7 @@ function fizzBuzz(numero) {
     return "buzz";
 
   }else if(numero%3==0 && numero%5==0){
-    return "fiz buzz";
+    return "fizzbuzz";
   }
   else{
     return numero;
@@ -206,27 +206,27 @@ function esVerdadero(valor){
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí   
-  var i =0;
-  while(numero<=60){
-    return i+" x "+ 6 +" = "+i*6;
-    i++;
+  //Escribe tu código aquí  
+  var arr = new Array(); 
+  for(let i=0;i<=60;i++){
+    arr[i]=i*6;
   }
+  return arr;
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  var n =0;
-  for(var i=1;i<=3;i++){
-     n = numero/10;
+  var count =0;
+  while(numero>0){
+    numero = Math.round(numero/10);
+    count++;
   }
-  if(count!=0){
-    return false;
-  }else{
+  if(count==3){
     return true;
+  }else{
+    return false;
   }
-  
 }
 
 function doWhile(numero) {
