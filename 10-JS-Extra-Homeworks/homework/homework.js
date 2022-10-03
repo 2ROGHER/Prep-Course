@@ -10,6 +10,7 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  return  Object.entries(objeto);//this metodo dive the array en smalls arrays and shows paris with key and value
 }
 
 
@@ -18,6 +19,7 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+
 }
 
 
@@ -66,6 +68,17 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
+  const newArr = [];
+  var len = arreglo1.length;
+  for(let i=0;i<len;i++){
+    for(let j=0;j<len;j++){
+      if(arreglo1[i]==arreglo2[j]){
+        newArr[i]=arreglo1[i];
+      }
+    }
+  }
+  return newArr;
+  
 }
 
 
