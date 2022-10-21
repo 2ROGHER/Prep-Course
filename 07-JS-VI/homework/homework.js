@@ -45,7 +45,9 @@ function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
-  const showValues = numeros.forEach(cb);
+  for(let i=0;i<array.length;i++){
+    cb(array[i]);
+  }
 
 }
 
@@ -54,7 +56,13 @@ function map(array, cb) {
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
-  const arrayWithMap = array.map(cb);
+  var newArr = [];
+  for(let i=0;i<array.length;i++){
+    newArr[i] = cb(array[i]);
+  }
+  return newArr;
+  
+
 }
 
 function filter(array) {

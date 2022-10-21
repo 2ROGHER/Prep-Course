@@ -28,6 +28,18 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  var mayuscula = '';
+  var minuscula = '';
+  for (i = 0; i<s.length; i++){ 
+    if(s[i] === s[i].toUpperCase()){ 
+          mayuscula = mayuscula + s[i]; 
+    }
+    else {
+          minuscula = minuscula + s[i];
+        } 
+  }       
+  return (mayuscula + minuscula) 
+
 }
 
 
@@ -45,6 +57,17 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+  let aux = numero;
+  let invertir = 0;
+  let digito = 0;
+  while(numero>0){
+    digito = numero%10;
+    invertir  = (invertir*10)+digito;
+    numero = (numero-digito)/10;
+
+  }
+  if(invertir == aux) return 'capicua';
+  else return 'no capicua';
 }
 
 
@@ -52,13 +75,39 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+  let newCadena = [];
+  let str = '';
+  for(let i=0;i<cadena.length;i++){
+    newCadena[i] = cadena[i];
+    if(newCadena[i]=='a' || newCadena[i]=='b' || newCadena[i]=='c'){
+      newCadena[i] = '';
+    }
+  }
+  for(let j=0;j<newCadena.length;j++){
+    str += newCadena[j];
+  }
+  return str;
 }
-
+  
+//imagine that the string si 'camila busca cama'
+//output
+//'mil us m'
 
 function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
+  let aux  = '';
+  for(let i=0;i<arr.length;i++){
+    for(let j=0;j<arr.length;j++){
+      if(arr[j].length>arr[j+1].length){
+        aux = arr[j+1];
+        arr[j+1] = arr[j];
+        arr[j] = aux;
+      }
+    }
+  }
+  return arr;
 }
 
 

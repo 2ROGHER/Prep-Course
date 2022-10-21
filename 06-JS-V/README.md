@@ -96,6 +96,7 @@ El método `create` de los objetos nos permite crear un nuevo objeto a partir de
 
 ### Object.assign
 
+
 El método `assign` de los objetos te permite agregar propiedades a un objeto pasado por parámetro
 
 ``` javascript
